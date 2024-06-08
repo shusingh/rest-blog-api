@@ -1,6 +1,6 @@
 # Blog API
 
-This is a RESTful API for managing blog posts, built with Rust and Actix-Web, and deployed on Render. It supports creating, reading, updating, and deleting blog posts.
+This is a RESTful API for managing blog posts, built with Rust and Actix-Web. It supports creating, reading, updating, and deleting blog posts.
 
 ## Features
 
@@ -13,5 +13,3 @@ This is a RESTful API for managing blog posts, built with Rust and Actix-Web, an
 
 - Rust
 - Actix-Web
-- PostgreSQL
-- Render (Deployment)
