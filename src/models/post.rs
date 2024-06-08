@@ -2,7 +2,7 @@ use serde::{Deserialize, Serialize};
 use uuid::Uuid;
 use chrono::Utc;
 
-#[derive(Debug, Serialize, Deserialize)]
+#[derive(Debug, Serialize, Deserialize, Clone)]
 pub struct Post {
     pub id: Uuid,
     pub title: String,
@@ -19,4 +19,10 @@ impl Post {
             timestamp: Utc::now().timestamp(),
         }
     }
+}
+
+#[derive(Debug, Serialize, Deserialize, Clone)]
+pub struct CreatePost {
+    pub title: String,
+    pub content: String,
 }
